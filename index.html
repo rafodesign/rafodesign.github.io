@@ -1,9 +1,75 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Rafo Design</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A set of morphing shape overlays with SVG" />
+    <meta name="keywords" content="rafo, design, portfolio, web design, desenvolvimento web, design grafico" />
+    <meta name="author" content="Samuel Rafo" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
+    <style type="text/css">
+    *,
+    *::after,
+    *::before {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        min-height: 100%;
+        background-color: #fff;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    #logo {
+    position: fixed;
+    left: 0;
+    background-image: url(logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 40px;
+    margin: 48px 0 0 48px;
+    z-index: 8000;
+}
+
+    .capa {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+        overflow-x: hidden;
+    }
+
+    .capa .texto {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 5.6vmax;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.1em;
+    position: absolute;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    white-space:nowrap;
+}
+    </style>
 </head>
+
 <body>
-Coming Soon!
+    <div id="logo"></div>
+    <div class="capa">
+        <span class="texto">EM CONSTRUÇÃO</span>
+    </div>
 </body>
+
 </html>
